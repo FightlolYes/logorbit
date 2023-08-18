@@ -1,8 +1,30 @@
 # This project is still work in progress
 
-# SwiftLog
+# SwiftLog 1.0.0
 
 **Swiftlog** is a simple and lightweight logging library for Node.JS applications. It provides an effortless way to log various types of information, from errors to debug messages, with minimal setup.
+
+## Installation
+
+Install **Swiftlog** using npm or yarn:
+
+```sh
+npm install swiftlog
+```
+
+or if you prefer yarn:
+
+```sh
+yarn add swiftlog
+```
+
+## Usage
+
+```javascript
+const swiftlog = require("swiftlog")
+
+swiftlog.logError("Your error")
+```
 
 ## Contributing
 Contributions are more than welcome! If you find issues or have improvements in mind, please don't hesitate to open an issue or submit a pull request on the GitHub respository
