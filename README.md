@@ -9,13 +9,13 @@
 Install **LogOrbit** using npm or yarn:
 
 ```sh
-npm install logOrbit
+npm install logorbit
 ```
 
 or if you prefer yarn:
 
 ```sh
-yarn add logOrbit
+yarn add logorbit
 ```
 
 ## Usage
