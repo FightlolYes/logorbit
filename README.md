@@ -1,12 +1,12 @@
 # This project is still work in progress
 
-# SwiftLog 1.0.0
+# LogOrbit 1.0.0
 
-**Swiftlog** is a simple and lightweight logging library for Node.JS applications. It provides an effortless way to log various types of information, from errors to debug messages, with minimal setup.
+**LogOrbit** is a simple and lightweight logging library for Node.JS applications. It provides an effortless way to log various types of information, from errors to debug messages, with minimal setup.
 
 ## Installation
 
-Install **logOrbit** using npm or yarn:
+Install **LogOrbit** using npm or yarn:
 
 ```sh
 npm install logOrbit
