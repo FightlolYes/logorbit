@@ -6,22 +6,22 @@
 
 ## Installation
 
-Install **Swiftlog** using npm or yarn:
+Install **logOrbit** using npm or yarn:
 
 ```sh
-npm install swiftlog
+npm install logOrbit
 ```
 
 or if you prefer yarn:
 
 ```sh
-yarn add swiftlog
+yarn add logOrbit
 ```
 
 ## Usage
 
 ```javascript
-const swiftlog = require("swiftlog")
+const logOrbit = require("logOrbit")
 
 swiftlog.logError("Your error")
 ```
