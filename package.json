@@ -1,5 +1,5 @@
 {
-  "name": "logOrbit",
+  "name": "logorbit",
   "version": "1.0.0",
   "description": "Simple and lightweight logging library for Node.JS applications",
   "main": "index.js",
