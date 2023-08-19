@@ -31,11 +31,11 @@ yarn add logorbit
 ## Usage
 
 ```javascript
-const logOrbit = require("logOrbit")
+const logorbit = require("logOrbit")
 
-logOrbit.setLog('json') // Logging method is plain text by default
+logorbit.setLog('json') // Logging method is plain text by default
 
-swiftlog.logError("Your error")
+logorbit.logError("Your error")
 ```
 
 ## Contributing
