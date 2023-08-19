@@ -4,8 +4,6 @@ const {getCurrentTimestamp} = require("./internal")
 
 function logError(error, config,logDir = "orbitlogs") {
 
-    console.log(config.logFormat)
-
     const logsFolderPath = path.join(process.cwd(), logDir)
     var timestamp = getCurrentTimestamp()
 
@@ -41,7 +39,7 @@ function logError(error, config,logDir = "orbitlogs") {
         console.log(`LogOrbit: Error logged at ${errorFilePath}`)
     }
 
-    console.log(`${timestamp}: ${error}`)
+    console.log(`LogOrbit: ${timestamp} - ${error}`)
 }
 
 module.exports = logError

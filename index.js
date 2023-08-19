@@ -1,4 +1,5 @@
 const logError = require("./src/error")
+const logDebug = require("./src/debug")
 
 let config = {
     logFormat: 'text' // Default log format
@@ -17,6 +18,7 @@ function setLog(logFormat) {
 
 module.exports = {
     logError: (error, logDir) => logError(error, config, logDir),
+    logDebug: (message, logDir) => logDebug(message, config, logDir),
     setLog: setLog,
     logFormat: config.logFormat,
     config: config
