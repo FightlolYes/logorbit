@@ -1,6 +1,6 @@
-# This project is still work in progress
+# This project is still under heavy development
 
-# LogOrbit 1.0.0
+# LogOrbit 1.1.0
 
 **LogOrbit** is a simple and lightweight logging library for Node.JS applications. It provides an effortless way to log various types of information, from errors to debug messages, with minimal setup.
 
@@ -18,10 +18,22 @@ or if you prefer yarn:
 yarn add logorbit
 ```
 
+## Changelog [1.1.0] - 2023-08-19
+
+### Added
+- Added features to use either JSON or text as logging methods.
+- Introduced the `setlog()` function to dynamically set the log format (JSON/Text)
+- Console prints the error to the terminal along with the path to the log file
+
+### Changed
+- Updated the logging format to "date time: error" while previously was just "error"
+
 ## Usage
 
 ```javascript
 const logOrbit = require("logOrbit")
+
+logOrbit.setLog('json') // Logging method is plain text by default
 
 swiftlog.logError("Your error")
 ```
