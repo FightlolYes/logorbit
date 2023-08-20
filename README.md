@@ -10,6 +10,7 @@
 - [Changelog](#changelog-120---2023-08-20)
 - [Installation](#installation)
 - [Usage](#usage)
+  - [Setting Logging Directory](#setting-logging-directory)
   - [Setting Logging Method](#setting-logging-method)
   - [Logging Errors](#logging-errors)
   - [Logging Debug Messages](#logging-debug-messages)
@@ -17,13 +18,13 @@
 - [License](#license)
 
 
-## Changelog [1.2.0] - 2023-08-20
+## Changelog [1.2.1] - 2023-08-20
 
 ### Added
-- Introduced the `logDebug()` function for logging debug messages in a seperate file (JSON/Text)
+- Introduced the `setDirName()` function to set a name for logging directory
 
 ### Changed
-- Enhanced console logging format to include a consistent prefix and timestamp.
+- Restructured README.md
 
 ## Installation
 
@@ -41,11 +42,21 @@ yarn add logorbit
 
 ## Usage
 
-### Setting Logging Method
+### Setting Logging Directory (Optional)
+Use the `setDirName` function to specity a directory name for storing all the generated logs
+
+```javascript
+const logorbit = require("logorbit")
+
+logorbit.setDirName("Logs") // Default dir name is "orbitlogs"
+```
+
+### Setting Logging Method (Optional)
 Use the `setLog()` function to set the logging method to json or plain text.
 ```javascript
 const logorbit = require("logorbit")
 
+logorbit.setDirName("Logs") // Default dir name is "orbitlogs"
 logorbit.setLog("json")
 ```
 
@@ -56,6 +67,7 @@ or
 ```javascript
 const logorbit = require("logorbit")
 
+logorbit.setDirName("Logs") // Default dir name is "orbitlogs"
 logorbit.setLog("text")
 ```
 
@@ -67,6 +79,8 @@ Utilize the `logError()` function to record various error messages in either JSO
 
 ```javascript
 const logorbit = require("logorbit")
+
+logorbit.setDirName("Logs") // Default dir name is "orbitlogs"
 logorbit.setLog("text")
 var error = "some error"
 
@@ -96,6 +110,8 @@ Utilize the `logDebug()` function to record debug messages in chosen file format
 
 ```javascript
 const logorbit = require("logorbit")
+
+logorbit.setDirName("Logs") // Default dir name is "orbitlogs"
 logorbit.setLog("text")
 
 logorbit.logDebug("Server started on port 5000")

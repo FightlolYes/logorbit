@@ -2,7 +2,9 @@ const fs = require("fs")
 const path = require("path")
 const {getCurrentTimestamp} = require("./internal")
 
-function logError(error, config,logDir = "orbitlogs") {
+function logError(error, config) {
+
+    logDir = config.logDirName
 
     const logsFolderPath = path.join(process.cwd(), logDir)
     var timestamp = getCurrentTimestamp()

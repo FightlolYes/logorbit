@@ -2,6 +2,7 @@ const logError = require("./src/error")
 const logDebug = require("./src/debug")
 
 let config = {
+    logDirName: 'orbitlogs', // Default
     logFormat: 'text' // Default log format
 }
 
@@ -16,10 +17,16 @@ function setLog(logFormat) {
     }
 }
 
+function setDirName(logDirName) {
+    config.logDirName = logDirName
+}
+
 module.exports = {
     logError: (error, logDir) => logError(error, config, logDir),
     logDebug: (message, logDir) => logDebug(message, config, logDir),
+    setDirName: setDirName,
     setLog: setLog,
+    logDirName: config.logDirName, 
     logFormat: config.logFormat,
     config: config
 }
