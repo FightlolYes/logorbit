@@ -4,7 +4,7 @@
   "keywords": [
     "logging",
     "logger",
-    "error handlibng",
+    "error handling",
     "utility"
   ],
   "description": "Simple and lightweight logging library for Node.JS applications",
