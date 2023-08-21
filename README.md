@@ -1,6 +1,6 @@
 # This project is still under heavy development
 
-[![npm version](https://badge.fury.io/js/logorbit.svg)](https://badge.fury.io/js/logorbit)
+![npm version](https://badge.fury.io/js/logorbit.svg)](https://badge.fury.io/js/logorbit)
 
 # LogOrbit
 
